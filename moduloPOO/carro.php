@@ -8,6 +8,14 @@ class Carro
 
 
     // Métodos
+    public function __construct(string $cor, int $ano, string $modelo)
+    {
+        $this->cor = $cor;
+        $this->ano = $ano;
+        $this->modelo = $modelo;
+    }
+
+
     public function acelerar()
     {
         echo 'Acelerando...';
@@ -19,10 +27,8 @@ class Carro
     }
 }
 
-$carro1 = new Carro;
-$carro1->cor = 'Azul';
-$carro1->ano = 2023;
-$carro1->modelo = 'ERFRE';
+$carro1 = new Carro('Pink', 2023, 'sd');
+
 
 
 echo '<br>Carro: 1 <br>';
